@@ -9,7 +9,7 @@ const gulp = require('gulp'),
 
 
 gulp.task('sass', () => {
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
             .pipe(sass({outputStyle: 'compressed'}).addListener('error', sass.logError))
             .pipe(rename('style.min.css'))
             .pipe(autoprefixer())
