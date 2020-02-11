@@ -1,5 +1,60 @@
+@import 'fonts';
 @import 'vars';
 @import 'global';
 
-
+.header__top-inner{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__text{
+    margin-left: auto;
+    margin-right: 25px;
+    color: #546e7a;
+    font-size: 15px;
+    line-height: 24px;
+    span{
+        color: $red;
+    }
+}
+.header__box{
+    .header__btn{
+        padding: 9px;
+        width: 72px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+    }
+    .header__btn:nth-child(2){
+        background-color: $green;
+        margin-right: 7px;
+    }
+    .header__btn:nth-child(3){
+        background-color: $red;
+    }
+}
+.header__menu{
+    background-color: $bg;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.menu__list{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 30px;
+        }
+        a{
+            color: #fff;
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 500; 
+        }
+    }
+}
 

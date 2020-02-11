@@ -11,6 +11,7 @@ html{
 a{
     display: inline-block;
     text-decoration: none;
+    color: $text;
 }
 
 ul,
@@ -19,4 +20,14 @@ li{
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+body{
+    @include fonts-main;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
 }
