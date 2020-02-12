@@ -365,5 +365,34 @@
         color: $bg;
     }
 }
-
 /************************************AUTHOR-SLIDER_END************************************/
+
+/************************************TUTORIAL_START************************************/
+.tutorial{
+    padding: 69px 0px 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+        width: 100%;
+
+        &-img{
+            min-height: 270px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &-title{
+            background-color: #fff;
+            font-size: 24px;
+            text-align: center;
+            color: $bg;
+            padding: 30px 10px;
+            font-weight: 700;
+        }
+    }
+}
+/************************************TUTORIAL_END************************************/
