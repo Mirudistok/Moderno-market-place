@@ -1,6 +1,10 @@
 html{
     box-sizing: border-box;
 }
+html,
+body{
+    height: 100%;
+}
 
 *, 
 *::before, 
@@ -55,4 +59,18 @@ body{
 .rate-star{
     display: inline-block;
     margin-right: 13px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
+.footer{
+    flex: 0 0 auto;
 }
