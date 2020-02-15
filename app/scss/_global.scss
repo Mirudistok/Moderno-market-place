@@ -74,3 +74,34 @@ body{
 .footer{
     flex: 0 0 auto;
 }
+
+.breadcrumbs{
+    background-color: $grey;
+    &__inner{
+        padding: 45px 0px 40px;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            &:last-child{
+                a,
+                span{
+                    color: $bg;
+                }
+            }
+            & + li {
+                padding-left: 24px;
+                &::before{
+                    content: '-';
+                    position: absolute;
+                    left: 8px;
+                    color: $green;
+                }
+            }
+        }
+        a{
+            color: #b0bec5;
+        }
+    }
+}
