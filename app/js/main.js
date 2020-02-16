@@ -25,4 +25,27 @@ document.addEventListener('DOMContentLoaded', () => {
         prefix: '$',
     });
 
+    const iconThLargeBtn= document.querySelector('.icon-th-large');
+    const iconThListBtn = document.querySelector('.icon-th-list');
+    const productItems = document.querySelectorAll('.product__item');
+
+    iconThListBtn.addEventListener('click', () => {
+        for(item of productItems) {
+            item.classList.add('list');
+        }
+        iconThListBtn.classList.add('active');
+        iconThLargeBtn.classList.remove('active');
+    });
+
+    iconThLargeBtn.addEventListener('click', () => {
+        for(item of productItems) {
+            if(item.classList.contains('list')) {
+                item.classList.remove('list');
+            }
+        }
+        iconThLargeBtn.classList.add('active');
+        iconThListBtn.classList.remove('active');
+    });
+
+
 });
